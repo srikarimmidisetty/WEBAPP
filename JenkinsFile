@@ -23,11 +23,5 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            // Cleanup any resources if needed
-        }
-    }
 }
 
