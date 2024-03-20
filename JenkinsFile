@@ -19,7 +19,7 @@ pipeline {
         stage('Run') {
             steps {
                 // Run the Spring Boot application
-                sh 'java -jar target/simple-web-app-1.0.0.jar'
+                sh 'java -jar var/lib/jenkins/workspace/WEBAPP/simple-web-app/target/simple-web-app-1.0.0.jar'
             }
         }
     }
