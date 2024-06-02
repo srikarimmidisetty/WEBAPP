@@ -9,19 +9,6 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                // Build the Maven project
-                sh 'cd simple-web-app && mvn clean package'
             }
-        }
-
-        stage('Run') {
-            steps {
-                // Run the Spring Boot application
-                sh 'java -jar var/lib/jenkins/workspace/WEBAPP/simple-web-app/target/simple-web-app-1.0.0.jar'
-            }
-        }
-    }
 }
 
